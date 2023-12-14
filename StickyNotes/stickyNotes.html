@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,22 +9,22 @@
 <body>
     <h1>Stiky Notes</h1>
     <div class="container">
-        <div class="input-box">
-            <h2>Write your post here</h2>
-            <form action="submit">
-                <textarea name="inputnote" id="inputnote" cols="30" rows="10"></textarea>
+        <div class="posts__input">
+            <h2>Input</h2>
+            <form action="submit" id="posts__form">
+                <textarea name="posts__text" id="posts__text" cols="30" rows="10"></textarea>
                 <button type="submit">Post</button>
             </form>
+            <p class="posts__msg" id="posts__msg"></p>
         </div>
-        <div class="notes-box">
-            <h2>Your posts here</h2>
-            <div class="sticky-note">
-                <p class="sticky-notes_note">This is an example note.</p>
-            </div>
-            <div class="sticky-note">
-                <p class="sticky-notes_note">This is an example note.</p>
+
+        <div class="posts__output" id="posts__output">
+            <h2>Output</h2>
+            <div class="posts__post">
+                <p class="posts__post-text">This is an example post.</p>
             </div>
         </div>
     </div>
 </body>
+<script src="./script.js"></script>
 </html>
