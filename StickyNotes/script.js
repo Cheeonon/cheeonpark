@@ -5,9 +5,9 @@ let msg = document.getElementById("posts__msg");
 
 form.addEventListener("submit", (e)=>{
     e.preventDefault();
-    console.log("submit");
     formValidation();
     generatePost();
+    e.target.reset();
 });
 
 let formValidation = (() => {
@@ -20,8 +20,8 @@ let formValidation = (() => {
 
 let generatePost = (()=> {
     output.innerHTML += `
-    <div>
-      <p>${text.value}</p>
+    <div class="posts__post">
+        <p class="posts__post-text">${text.value}</p>
     </div>
     `;
 });
