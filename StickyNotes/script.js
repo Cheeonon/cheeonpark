@@ -24,4 +24,4 @@ let generatePost = (()=> {
         <p class="posts__post-text">${text.value}</p>
     </div>
     `;
-});
+})
